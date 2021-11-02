@@ -17,7 +17,8 @@ Para enviar todos los nuevos archivos al staging:
 Para guardar los cambios en el repositorio se usa:
 	git commit -m "<Comentario>"
 
-Para agregar al staging y guardar cambios en el repositorio
+Para agregar al staging las modificaciones de archivos anteriomente 
+agregados y guardar cambios en el repositorio
 	git commit -am "<Comentario>"
 
 
