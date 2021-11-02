@@ -1,10 +1,9 @@
 # Comandos git
 
 
- * INICIAR PROYECTO *
+ # INICIAR PROYECTO 
  
-Para iniciar un proyecto GIT necesitamos ir, a travez de la consola,
-a la carpeta del proyecto. Luego ejecutar:
+* Para iniciar un proyecto GIT necesitamos ir, a travez de la consola, a la carpeta del proyecto. Luego ejecutar:
 	git init
 
 	
