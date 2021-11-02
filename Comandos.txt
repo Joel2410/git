@@ -27,3 +27,13 @@ git config --global user.email "Email"
 Para ver la configuracion actual
 
 git config --list
+
+
+Para agregar nuestro proyecto a un repositorio remoto
+
+git remote add origin <url>
+
+para ver el repositorio remoto
+
+git remote --v
+
