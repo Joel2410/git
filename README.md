@@ -8,24 +8,23 @@
 
 	
 
- * AGREGAR ARCHIVOS AL STAGING Y/O REPOSITORIO
+ # AGREGAR ARCHIVOS AL STAGING Y/O REPOSITORIO
  
-Para enviar los nuevos archivos al staging:
+* Para enviar los nuevos archivos al staging:
 	git add <nombre_archivo,...>
 
-Para enviar todos los nuevos archivos al staging:
+* Para enviar todos los nuevos archivos al staging:
 	git add .
 
-Para guardar los cambios en el repositorio se usa:
+* Para guardar los cambios en el repositorio se usa:
 	git commit -m "<Comentario>"
 
-Para agregar al staging las modificaciones de archivos anteriomente 
-agregados y guardar cambios en el repositorio
+* Para agregar al staging las modificaciones de archivos anteriomente agregados y guardar cambios en el repositorio
 	git commit -am "<Comentario>"
 
 
 
- * ESTADO Y/O CAMBIOS / DIFERENCIAS *
+ # ESTADO Y/O CAMBIOS / DIFERENCIAS 
  
 Luego de hacer cambios y/o crear nuevos archivos podemos ver el estado con:
 	git status
