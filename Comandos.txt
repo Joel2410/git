@@ -27,10 +27,10 @@ Para agregar al staging y guardar cambios en el repositorio
 Luego de hacer cambios y/o crear nuevos archivos podemos ver el estado con:
 	git status
 	
-Para ver los cambios
+Para ver los ultimos cambios
 	git show
 	
-Para ver las diferencias
+Para ver las diferencias actuales
 	git diff
 
 Para ver el historial de los commits
