@@ -61,14 +61,27 @@ Para agregar nuestro proyecto a un repositorio remoto:
 Para ver el repositorio remoto:
 	git remote --v
 
-Para enviar los cambios al repositorio remote:
-	git push -u origin <rama>
+Para enviar y crear la rama en el repositorio remote:
+	git push -u <remoto> <rama_local>
 
 Luego de ejecutar este la primera vez pedira autentificacion.
 Si su repositorio esta en GitHub se debe generar un token, 
 en ves de poner user y pass, se coloca user y token.
 
+Para enviar cambios:
+	git push <remoto> <rama_local>
 
+Para enviar todas las ramas:
+	git push --all
+
+Para obtener los commit del repositorio remoto:
+	git fetch <remoto> <rama_local>
+
+Para obtener y unir los cambios del remoto al local
+	git pull <remoto> <rama_local>
+
+Para obtener y unir los cambios de todas las ramas del remoto al local
+	git pull --all
 
  * RAMAS *
 
@@ -81,3 +94,22 @@ Para crear una rama:
 Para moverte de una rama a otra:
 	git checkout <nombre>
 
+Para crear y moverte a la vez de una rama a otra:
+	git checkout -b <nombre>
+
+Tener en cuenta que si cambiamos de rama sin agregar los cambios 
+al staging, estos podrian perderse.
+
+Para unir ramas, posicionarte en la rama donde quieres insertar
+los cambios y ejecutar:
+	git merge <rama>
+
+
+ * MOVERSE A OTRO COMMIT
+
+Para moverte a un commit:
+	git checkout <id_commit>
+
+Para resetear el historial a un commit
+	git reset <id_commit>
+ 
