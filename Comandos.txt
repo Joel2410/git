@@ -1,5 +1,29 @@
 Para iniciar un proyecto GIT necesitamos ir, a travez de la consola, a la carpeta del proyecto.
-
 Luego ejecutar:
+
 git init
 
+Luego de hacer cambios y/o crear nuevos archivos podemos ver el estado consola
+
+git status
+
+Para enviar los nuevos archivos al staggin
+
+git add <nombre_archivo,...>
+
+o
+
+git add .
+
+Para agregar todos los archivos nuevos
+
+
+Para configurar el user y email
+
+git config --global user.name "Nombre"
+git config --global user.email "Email"
+
+
+Para ver la configuracion actual
+
+git config --list
