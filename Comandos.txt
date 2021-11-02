@@ -1,52 +1,82 @@
-Para iniciar un proyecto GIT necesitamos ir, a travez de la consola, a la carpeta del proyecto.
-Luego ejecutar:
+ * INICIAR PROYECTO *
+ 
+Para iniciar un proyecto GIT necesitamos ir, a travez de la consola,
+a la carpeta del proyecto. Luego ejecutar:
+	git init
 
-git init
+	
 
-Luego de hacer cambios y/o crear nuevos archivos podemos ver el estado consola
+ * AGREGAR ARCHIVOS AL STAGING Y/O REPOSITORIO
+ 
+Para enviar los nuevos archivos al staging:
+	git add <nombre_archivo,...>
 
-git status
+Para enviar todos los nuevos archivos al staging:
+	git add .
 
-Para enviar los nuevos archivos al stagging
+Para guardar los cambios en el repositorio se usa:
+	git commit -m "<Comentario>"
 
-git add <nombre_archivo,...>
-
-o
-
-git add .
-
-Para agregar todos los archivos nuevos
-
-
-Para guardar los cambios en el repositorio se usa (Esto seria una version, un punto a donde podemos ir en cualquier momento)
-
-git commit -m "<Comentario>"
-
-Para agregar al stagging y guardar cambios en el repositorio
-
-git commit -am "<Comentario>"
+Para agregar al staging y guardar cambios en el repositorio
+	git commit -am "<Comentario>"
 
 
-Para configurar el user y email
 
-git config --global user.name "<Nombre>"
-git config --global user.email "<Email>"
+ * ESTADO Y/O CAMBIOS / DIFERENCIAS *
+ 
+Luego de hacer cambios y/o crear nuevos archivos podemos ver el estado con:
+	git status
+	
+Para ver los cambios
+	git show
+	
+Para ver las diferencias
+	git diff
+
+Para ver el historial de los commits
+	git log
+
+Para ver el historial de los commits resumidos
+	git log --oneline
+	
+	
+	
+ * CONFIGURACIONRES GENERALES *
+
+Para configurar el user y email:
+	git config --global user.name "<Nombre>"
+	git config --global user.email "<Email>"
+
+Para ver la configuracion actual:
+	git config --list
 
 
-Para ver la configuracion actual
 
-git config --list
+ * REPOSITORIO REMOTO *
+
+Para agregar nuestro proyecto a un repositorio remoto:
+	git remote add origin <url>
+
+Para ver el repositorio remoto:
+	git remote --v
+
+Para enviar los cambios al repositorio remote:
+	git push -u origin <rama>
+
+Luego de ejecutar este la primera vez pedira autentificacion.
+Si su repositorio esta en GitHub se debe generar un token, 
+en ves de poner user y pass, se coloca user y token.
 
 
-Para agregar nuestro proyecto a un repositorio remoto
 
-git remote add origin <url>
+ * RAMAS *
 
-para ver el repositorio remoto
+Para ver las ramas:
+	git branch
 
-git remote --v
+Para crear una rama: 
+	git branch <nombre>
 
-Para enviar los cambios al repositorio remote
-
-git push -u origin <rama>
+Para moverte de una rama a otra:
+	git checkout <nombre>
 
