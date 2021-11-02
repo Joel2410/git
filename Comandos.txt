@@ -7,7 +7,7 @@ Luego de hacer cambios y/o crear nuevos archivos podemos ver el estado consola
 
 git status
 
-Para enviar los nuevos archivos al staggin
+Para enviar los nuevos archivos al stagging
 
 git add <nombre_archivo,...>
 
@@ -18,10 +18,19 @@ git add .
 Para agregar todos los archivos nuevos
 
 
+Para guardar los cambios en el repositorio se usa (Esto seria una version, un punto a donde podemos ir en cualquier momento)
+
+git commit -m "<Comentario>"
+
+Para agregar al stagging y guardar cambios en el repositorio
+
+git commit -am "<Comentario>"
+
+
 Para configurar el user y email
 
-git config --global user.name "Nombre"
-git config --global user.email "Email"
+git config --global user.name "<Nombre>"
+git config --global user.email "<Email>"
 
 
 Para ver la configuracion actual
@@ -36,4 +45,8 @@ git remote add origin <url>
 para ver el repositorio remoto
 
 git remote --v
+
+Para enviar los cambios al repositorio remote
+
+git push -u origin <rama>
 
