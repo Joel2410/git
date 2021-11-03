@@ -138,3 +138,4 @@ Tener en cuenta que si cambiamos de rama sin agregar los cambios al staging, est
 * Volverl al último commit 
 </br>```git checkout master```
  
+Ver mas en: https://www.atlassian.com/es/git/tutorials/
