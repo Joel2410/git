@@ -1,199 +1,137 @@
 # Comandos git
+</br>
 
-
-## INICIAR PROYECTO 
+### INICIAR PROYECTO 
  
 * Para iniciar un proyecto GIT necesitamos ir, a travez de la consola, a la carpeta del proyecto. Luego ejecutar:
-``` 
-git init
-```
+</br>```git init```
 
+</br>
 
-## AGREGAR ARCHIVOS AL STAGING Y/O REPOSITORIO
+### AGREGAR ARCHIVOS AL STAGING Y/O REPOSITORIO
  
-* Para enviar los nuevos archivos al staging:
-``` 
-git add <nombre_archivo,...>
-```
+* Enviar los cambios y nuevos archivos al staging:
+</br>```git add <archivo,...>```
 
-* Para enviar todos los nuevos archivos al staging:
-```
-git add .
-```
+* Enviar todos los cambios y nuevos archivos al staging
+</br>```git add .```
 
-* Para guardar los cambios en el repositorio se usa:
-```
-git commit -m "<Comentario>"
-```
+* Guardar los cambios en el repositorio local:
+</br>```git commit -m "<Comentario>"```
 
-* Para agregar al staging las modificaciones de archivos anteriomente agregados y guardar cambios en el repositorio
-```
-git commit -am "<Comentario>"
-```
+* Agregar al staging las modificaciones de archivos anteriomente agregados y guardar cambios en el repositorio local
+</br>```git commit -am "<Comentario>"```
 
 * Remover archivo
-```
-git rm --cached my-file 
-```
+</br>```git rm --cached <archivo>```
 
-## ESTADO Y/O CAMBIOS / DIFERENCIAS 
+</br>
+
+### ESTADO Y/O CAMBIOS / DIFERENCIAS 
  
-* Luego de hacer cambios y/o crear nuevos archivos podemos ver el estado con:
-```
-git status
-```
+* Ver el estado
+</br>```git status```
 	
-* Para ver los ultimos cambios
-```
-git show
-```
+* Ver los ultimos cambios
+</br>```git show```
 	
-* Para ver las diferencias actuales
-```
-git diff
-```
+* Ver las diferencias actuales
+</br>```git diff```
 
-* Para ver el historial de los commits
-```
-git log
-```
+* Ver el historial de los commits
+</br>```git log```
 
-* Para ver el historial de los commits resumidos
-```
-git log --oneline
-```
+* Ver el historial de los commits resumidos
+</br>```git log --oneline```
 
-	
-## CONFIGURACIONRES GENERALES
+</br>
 
-* Para configurar el user:
-```
-git config --global user.name "<Nombre>"
-```
+### CONFIGURACIONRES GENERALES
 
-* Para configurar el email:
-```
-git config --global user.email "<Email>"
-```
+* Configurar el user:
+</br>```git config --global user.name "<Nombre>"```
 
-* Para ver la configuracion actual:
-```
-git config --list
-```
+* Configurar el email:
+</br>```git config --global user.email "<Email>"```
 
+* Ver la configuracion actual:
+</br>```git config --list```
 
-## REPOSITORIO REMOTO
+</br>
 
-* Para agregar nuestro proyecto a un repositorio remoto:
-```
-git remote add origin <url>
-```
+### REPOSITORIO REMOTO
 
-* Para ver el repositorio remoto:
-```
-git remote --v
-```
+* Agregar nuestro proyecto a un repositorio remoto:
+</br>```git remote add <rama_romota> <url>```
 
-* Para enviar y crear la rama en el repositorio remote:
-```
-git push -u <remoto> <rama_local>
-```
+* Ver el repositorio remoto:
+</br>```git remote --v```
+
+* Enviar y crear la rama en el repositorio remote:
+</br>```git push -u <rama_remota> <rama_local>```
 
 Luego de ejecutar este la primera vez pedira autentificacion.
 Si su repositorio esta en GitHub se debe generar un token, en ves de poner user y pass, se coloca user y token.
 
-* Para enviar cambios:
-```
-git push <remoto> <rama_local>
-```
+* Enviar cambios:
+</br>```git push <remoto> <rama_local>```
 
-* Para enviar todas las ramas:
-```
-git push --all
-```
+* Enviar todas las ramas:
+</br>```git push --all```
 
-* Para obtener los commit del repositorio remoto:
-```
-git fetch <remoto> <rama_local>
-```
+* Obtener los commit del repositorio remoto:
+</br>```git fetch <rama_remota> <rama_local>```
 
-* Para obtener y unir los cambios del remoto al local
-```
-git pull <remoto> <rama_local>
-```
+* Obtener y unir los cambios del remoto al local
+</br>```git pull <rama_remota> <rama_local>```
 
-* Para obtener y unir los cambios de todas las ramas del remoto al local
-```
-git pull --all
-```
+* Obtener y unir los cambios de todas las ramas del remoto al local
+</br>```git pull --all```
 
-* Para cambiar la url del repositorio
-```
-git remote set-url origin repository-link.com
-```
+* Cambiar la url del repositorio
+</br>```git remote set-url origin repository-link.com```
 
+</br>
 
- ## RAMAS
+### RAMAS
 
-* Para ver las ramas:
-```
-git branch
-```
+* Ver las ramas:
+</br>```git branch```
 
-* Para crear una rama: 
-```
-git branch <nombre>
-```
-
+* Crear una rama: 
+</br>```git branch <nombre>```
    
 * Renombrar rama actual
-```
-git branch -m <nombre>
-```
+</br>```git branch -m <nombre>```
 
 * Borrar rama
-```
-git branch <nombre> -d 
-``` 
+</br>```git branch <rama_local> -d``` 
 
-* Para moverte de una rama a otra:
-```
-git checkout <nombre>
-```
+* Moverte de una rama a otra:
+</br>```git checkout <nombre>```
 
-* Para crear y moverte a la vez de una rama a otra:
-```
-git checkout -b <nombre>
-```
+* Crear y moverte a la vez de una rama a otra:
+</br>```git checkout -b <nombre>```
 
 Tener en cuenta que si cambiamos de rama sin agregar los cambios al staging, estos podrian perderse.
 
-* Para unir ramas, posicionarte en la rama donde quieres insertar los cambios y ejecutar:
-```
-git merge <rama>
-```
+Unir ramas, posicionarte en la rama donde quieres insertar los cambios y ejecutar:
+</br>```git merge <rama>```
 
+</br>
 
- ## MOVERSE A OTRO COMMIT
+### MOVERSE A OTRO COMMIT
 
 * Para moverte a un commit:
-```
-git checkout <id_commit>
-```
+</br>```git checkout <id_commit>```
 
-* Para resetear el historial a un commit borrando el staging actual
-```
-git reset <id_commit> --hard
-```
+* Rresetear el historial a un commit borrando el staging actual
+</br>```git reset <id_commit> --hard```
 
 
-* Para resetear el historial a un commit dejando el staging actual
-```
-git reset <id_commit> --soft
-```
+* Resetear el historial a un commit dejando el staging actual
+</br>```git reset <id_commit> --soft```
 
 * Volverl al último commit 
-```
-git checkout master  
-```
+</br>```git checkout master```
  
