@@ -4,13 +4,17 @@
 ## INICIAR PROYECTO 
  
 * Para iniciar un proyecto GIT necesitamos ir, a travez de la consola, a la carpeta del proyecto. Luego ejecutar:
-```git init```
+```  bash
+git init
+```
 
 
 ## AGREGAR ARCHIVOS AL STAGING Y/O REPOSITORIO
  
 * Para enviar los nuevos archivos al staging:
-```git add <nombre_archivo,...>```
+```  bash
+$ git add <nombre_archivo,...>
+```
 
 * Para enviar todos los nuevos archivos al staging:
 ```git add .```
