@@ -31,6 +31,11 @@ git commit -m "<Comentario>"
 git commit -am "<Comentario>"
 ```
 
+* Remover archivo
+```
+git rm --cached my-file 
+```
+
 ## ESTADO Y/O CAMBIOS / DIFERENCIAS 
  
 * Luego de hacer cambios y/o crear nuevos archivos podemos ver el estado con:
@@ -139,6 +144,17 @@ git branch
 ```
 git branch <nombre>
 ```
+
+   
+* Renombrar rama actual
+```
+git branch -m <nombre>
+```
+
+* Borrar rama
+```
+git branch <nombre> -d 
+``` 
 
 * Para moverte de una rama a otra:
 ```
