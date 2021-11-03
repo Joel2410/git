@@ -122,6 +122,12 @@ git pull <remoto> <rama_local>
 git pull --all
 ```
 
+* Para cambiar la url del repositorio
+```
+git remote set-url origin repository-link.com
+```
+
+
  ## RAMAS
 
 * Para ver las ramas:
@@ -159,7 +165,19 @@ git merge <rama>
 git checkout <id_commit>
 ```
 
-* Para resetear el historial a un commit
+* Para resetear el historial a un commit borrando el staging actual
 ```
-git reset <id_commit>
+git reset <id_commit> --hard
 ```
+
+
+* Para resetear el historial a un commit dejando el staging actual
+```
+git reset <id_commit> --soft
+```
+
+* Volverl al último commit 
+```
+git checkout master  
+```
+ 
