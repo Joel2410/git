@@ -115,7 +115,7 @@ Si su repositorio esta en GitHub se debe generar un token, en ves de poner user 
 
 Tener en cuenta que si cambiamos de rama sin agregar los cambios al staging, estos podrian perderse.
 
-Unir ramas, posicionarte en la rama donde quieres insertar los cambios y ejecutar:
+* Unir ramas, posicionarte en la rama donde quieres insertar los cambios y ejecutar:
 </br>```git merge <rama>```
 
 </br>
