@@ -121,6 +121,11 @@ Tener en cuenta que si cambiamos de rama sin agregar los cambios al staging, est
 * Unir ramas, posicionarte en la rama donde quieres insertar los cambios y ejecutar:
 </br>```git merge <rama>```
 
+* Unir ramas, posicionarte en la rama donde estan los cambios y ejecutar:
+</br>```git rebase <rama>```
+
+Luego de un rebase se debe de ejecutar un merge en la rama donde se insertaron los cambios
+
 </br>
 
 ### MOVERSE A OTRO COMMIT
