@@ -62,13 +62,13 @@
 ### REPOSITORIO REMOTO
 
 * Agregar nuestro proyecto a un repositorio remoto:
-</br>```git remote add <rama_romota> <url>```
+</br>```git remote add <remoto> <url>```
 
 * Ver el repositorio remoto:
 </br>```git remote --v```
 
 * Enviar y crear la rama en el repositorio remote:
-</br>```git push -u origin <rama_local>```
+</br>```git push -u <remoto> <rama_local>```
 
 Luego de ejecutar este la primera vez pedira autentificacion.
 Si su repositorio esta en GitHub se debe generar un token, en ves de poner user y pass, se coloca user y token.
@@ -80,10 +80,10 @@ Si su repositorio esta en GitHub se debe generar un token, en ves de poner user 
 </br>```git push --all```
 
 * Obtener los commit del repositorio remoto:
-</br>```git fetch origin <rama_local>```
+</br>```git fetch <remoto> <rama_local>```
 
 * Obtener y unir los cambios del remoto al local
-</br>```git pull origin <rama_local>```
+</br>```git pull <remoto> <rama_local>```
 
 * Obtener y unir los cambios de todas las ramas del remoto al local
 </br>```git pull --all```
